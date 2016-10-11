@@ -29,11 +29,14 @@ namespace DiceGame
             //die1.RollDie();
             //Console.WriteLine($"the value of the dice is {die1.GetValue()}");
 
+            Die die1000 = new Die(1000);
+            die1000.RollDie();
+
             Console.WriteLine("Dicecup");
             DiceCup diceCup = new DiceCup();
             diceCup.RollAllDiceInCup();
             Console.WriteLine($"Samlet værdi {diceCup.GetTotalValue()}");
-
+            // 1000 sidet terning
             int value1 = 10;
             bool resultat = diceCup.IsTotalValueLargerThan(value1);
 
